@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #262626;
+    font-size: 62.5%;
+}
+
+div.box-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.flex-box
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 30em;
+    height: auto;
+    border-radius: 0.4em;
+    background-color: #fff;
+    text-align: center;
+    margin: 2em;
+    padding: 2em;
+    transition: 0.2s ease-in-out;
+}
+
+div.flex-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8em;
+    height: 8em;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    padding: 2em;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.flex-box:nth-child(1) div.flex-img
+{
+    background-image: url(img/adobe\ ps.png);
+}
+
+div.flex-box:nth-child(2) div.flex-img
+{
+    background-image: url(img/adobe\ ai.png);
+}
+
+div.flex-box:nth-child(3) div.flex-img
+{
+    background-image: url(img/corel\ draw.png);
+}
+
+span.header-text
+{
+    font-size: 2.4em;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+div.flex-text p
+{
+    font-size: 2em;
+    text-align: justify;
+}
+
+div.flex-box:hover 
+{
+    background-color: coral;
+    color: #fff;
+}
